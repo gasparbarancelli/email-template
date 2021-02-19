@@ -1,0 +1,27 @@
+{% extends "templates/base.html" %}
+
+{% block title %} {{ name | title }} temos uma oferta fresquinha para você {% endblock %}
+
+{% block content %}
+<h1> MEGA OFERTA!!! </h1>
+<p>
+    Utilizando o cupom <strong>{{ cupom }}</strong>
+    você tem direito a <span style="color: red">{{ desconto }}%</span>
+    de desconto nas compras acima de <u>R$ {{ valor }}</u>.
+</p>
+
+<div style="background-color: yellow; padding: 20px">
+    Lembre-se temos <u><strong>FRETE GRATIS</strong></u> para leitores do blog.
+</div>
+
+<p>
+    Confira uma lista com nossos produtos mais vendidos...
+</p>
+
+<hr/>
+
+<p>
+Caso você não queira mais receber nossas ofertas por email, clique <a href="#">aqui</a>.
+</p>
+
+{% endblock %}
